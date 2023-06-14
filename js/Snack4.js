@@ -58,3 +58,14 @@ const teamsFoul = [...teamsScoredFoul];
 teamsFoul.forEach((team) => delete team.score);
 
 console.table(teamsFoul);
+
+let page = `<h1 class="ms-3 mt-5">SNACK 4</h1>`;
+
+teamsFoul.forEach((team) => {
+  page += `<div class="m-3">
+    Squadra: ${team.name} <br>
+    Numero di falli: ${team.foul}<br>
+  </div>`;
+});
+
+dom.innerHTML += page;

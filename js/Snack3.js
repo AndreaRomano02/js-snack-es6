@@ -1,6 +1,6 @@
 console.log("JS OK");
 
-const dom = document.querySelector("body");
+let dom = document.querySelector("body");
 
 //# Creo l'Array delle bici
 const bikes = [
