@@ -1,5 +1,7 @@
 console.log("JS OK");
 
+const dom = document.querySelector("body");
+
 //# Creo l'Array delle bici
 const bikes = [
   {
@@ -30,3 +32,9 @@ const minWeight = bikes.reduce((prev, curr) =>
 );
 
 console.log(minWeight);
+
+dom.innerHTML = `<div class="m-3">
+  <h1>SNACK 3</h1>
+  Il nome della bici che pesa meno è: ${minWeight.name} <br>
+  Il peso è: ${minWeight.weight}Kg
+</div>`;
